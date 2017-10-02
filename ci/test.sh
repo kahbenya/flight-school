@@ -2,6 +2,6 @@
 
 set -e -x
 pushd flight-school
-  bundles install
+  bundle install
   bundle exec rspec
 popd
