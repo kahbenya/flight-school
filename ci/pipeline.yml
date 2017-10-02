@@ -12,4 +12,10 @@ jobs:
     trigger: true
   - task: tests
     file: flight-school/build.yml
+- name: wait-app
+  plan:
+  - get: flight-school
+    trigger: true
+  - task: wait
+    file: flight-school/ci/build2.yml
 
